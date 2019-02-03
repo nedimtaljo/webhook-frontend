@@ -22,7 +22,7 @@ const HookLoader = (props) => {
 
   return (
     <div className={classes.content}>
-      <form onSubmit={(event) => props.submitForm(event)}>
+      <form className={classes.form} onSubmit={(event) => props.submitForm(event)}>
         <label>
           WebhookURL:
           <input type='text' value={props.inputValue} onChange={(event) => props.inputChange(event)} />

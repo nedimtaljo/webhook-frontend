@@ -61,6 +61,7 @@ class HookManager extends Component {
         <div className={classes.flexSection}>
           <HookList
             hooks={this.state.hooks}
+            activeHookId={activeHookId}
             onClick={this.handleSelectHook}/>
           <HookEditor activeHook={activeHook} />
         </div>

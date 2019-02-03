@@ -2,13 +2,14 @@ import React from 'react';
 import HookItem from './HookItem/HookItem';
 import classes from './HookList.module.css';
 
-const HookList = (props) => {  
+const HookList = (props) => {
   const hooks = props.hooks.map(hook =>
     <HookItem
       hookName={hook.id}
+      active={props.activeHookId === hook.id ? true : false}
       onClick={() => props.onClick(hook.id)}
       key={hook.id} />
-    );
+  );
   // The two API hooks should be hidden from display, or at least be protected from modification
 
   return (
