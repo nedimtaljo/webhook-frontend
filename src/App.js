@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
 import './App.css';
+import Layout from './hoc/Layout/Layout';
+import HookManager from './containers/HookManager/HookManager';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <h1>Hello Webhook-frontend</h1>
-      </div>
+      <Layout>
+        <HookManager />
+      </Layout>
     );
   }
 }
