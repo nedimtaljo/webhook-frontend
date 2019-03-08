@@ -6,8 +6,8 @@ const HookList = props => {
     const hooks = props.hooks.map(hook =>
         <HookItem
             hookName={hook.id}
-            active={props.activeHookId === hook.id ? true : false}
-            onClick={() => props.onClick(hook.id)}
+            active={props.activeHookId === hook.id}
+            onClick={props.onClick}
             key={hook.id} />
     );
     // The two API hooks should be hidden from display, or at least be protected from modification

@@ -1,17 +1,21 @@
-import React from 'react';
+import React, { Component } from 'react';
 import classes from './HookItem.module.css';
 
-const HookItem = props => {
-    let appliedClasses = [classes.hookItem];
-    if (props.active) {
-        appliedClasses.push(classes.active);
-    }
+class HookItem extends Component {
+    handleHookClick = () => this.props.onClick(this.props.hookName);
+    
+    render() {
+        let appliedClasses = [classes.hookItem];
+        if (this.props.active) {
+            appliedClasses.push(classes.active);
+        }
 
-    return (
-        <div className={appliedClasses.join(' ')} onClick={props.onClick}>
-            {props.hookName}   
-        </div>
-    );
+        return (
+            <div className={appliedClasses.join(' ')} onClick={this.handleHookClick}>
+                {this.props.hookName}
+            </div>
+        );
+    }
 }
 
 export default HookItem;
