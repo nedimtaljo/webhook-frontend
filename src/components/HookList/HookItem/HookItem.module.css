@@ -1,0 +1,15 @@
+.hookItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  cursor: pointer;
+}
+
+.hookItem:hover {
+  background-color: lightgoldenrodyellow;
+}
+
+.hookItem.active {
+  background-color: antiquewhite;
+}

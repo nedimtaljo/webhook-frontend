@@ -1,0 +1,2 @@
+export const INIT_APP_SUCCESS = "INIT_APP_SUCCESS";
+export const INIT_APP_FAIL = "INIT_APP_FAIL";
