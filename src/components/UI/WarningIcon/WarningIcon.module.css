@@ -1,0 +1,9 @@
+.general {
+    display: block;
+    margin: auto;
+}
+
+.standard {
+    width: 80px;
+    height: 80px;
+}
