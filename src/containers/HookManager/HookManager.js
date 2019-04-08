@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
 import { connect }from 'react-redux';
 
-import HookLoader from '../../components/HookLoader/HookLoader';
 import HookList from '../../components/HookList/HookList';
-import HookEditor from '../../components/HookEditor/HookEditor';
 import classes from './HookManager.module.css';
 
 class HookManager extends Component {
@@ -24,13 +22,11 @@ class HookManager extends Component {
 
         return (
             <>
-                <HookLoader />
                 <div className={classes.flexSection}>
                     <HookList
                         hooks={this.props.hooks}
                         activeHookId={activeHookId}
                         onClick={this.handleSelectHook} />
-                    <HookEditor activeHook={activeHook} />
                 </div>
             </>
         );

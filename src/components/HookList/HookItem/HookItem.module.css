@@ -1,15 +1,38 @@
 .hookItem {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 30px;
-  cursor: pointer;
+  background-color: #FFFFFF;
+  height: 50px;
+  border: 1px solid #878787;
+}
+
+.left {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    padding-left: 25px;
+}
+
+.left img {
+    display: inline-block;
+    width: 15px;
+    height: 24px;
+    padding-right: 30px;
+}
+
+.right {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 25px;
+}
+
+.center {
+    flex: 2;
+    display: flex;
+    align-items: center;
+    padding-left: 60px;
 }
 
 .hookItem:hover {
-  background-color: lightgoldenrodyellow;
-}
-
-.hookItem.active {
-  background-color: antiquewhite;
+    background-color: antiquewhite;
 }
