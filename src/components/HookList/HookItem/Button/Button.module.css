@@ -1,0 +1,28 @@
+.general {
+    font: inherit;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.functional {
+    background-color: inherit;
+    width: 50px;
+}
+
+.script {
+    width: 100px;
+    height: 30px;
+    background-color: #D6D6D6;
+    border-radius: 3px;
+    color: #FF5E5E;
+    font-size: 18px;
+}
+
+.functional:hover {
+    background-color: lightgrey;
+}
+
+.functional:active, .script:active {
+    background-color: darkgrey;
+}

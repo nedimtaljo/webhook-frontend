@@ -1,0 +1,22 @@
+.content {
+    position: relative;
+    top: 250px;
+    text-align: center;
+}
+
+.paragraph {
+    margin: 0;
+}
+
+.loading {
+    font-size: 24px;
+}
+
+.failedUpper {
+    font-size: 24px;
+    color: #EA0B0B;
+}
+
+.failedLower {
+    font-size: 18px;
+}
